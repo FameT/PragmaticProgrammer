@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Commands">
+    <Position X="2.979" Y="0.979" Height="0.291" Width="0.825" />
+  </Comment>
+  <Class Name="MiniLangLib.Commands.CommandParser" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Commands\CommandParser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MiniLangLib.Commands.CommandParserException">
+    <Position X="2.5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\CommandParserException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniLangLib.Commands.CommandBase">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAgAAAAAAAABIQAAAAAAAQAAAAAAAEAAAIAAAAAAAA=</HashCode>
+      <FileName>Commands\CommandBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MiniLangLib.Commands.MovePenToDirectionCommand">
+    <Position X="6.5" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAQEACAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\MovePenToDirectionCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniLangLib.Commands.PenSelectionCommand">
+    <Position X="4.25" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IBAAAAAAAAAAAAQEAAAEAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\PenSelectionCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniLangLib.Commands.PenStateChangingCommand">
+    <Position X="10" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\PenStateChangingCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniLangLib.Commands.PenUpCommand">
+    <Position X="9.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\PenUpCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniLangLib.Commands.PenDownCommand">
+    <Position X="11.5" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\PenDownCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MiniLangLib.Commands.ICommand">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAQAAAAAAAQAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\ICommand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MiniLangLib.Commands.ICommandParser">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\ICommandParser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -40,7 +40,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\CommandBase.cs" />
+    <Compile Include="Commands\MovePenToDirectionCommand.cs" />
+    <Compile Include="Commands\PenDownCommand.cs" />
+    <Compile Include="Commands\PenSelectionCommand.cs" />
+    <Compile Include="Commands\PenStateChangingCommand.cs" />
+    <Compile Include="Commands\PenUpCommand.cs" />
+    <Compile Include="Drawers\ConsoleDrawer.cs" />
+    <Compile Include="Drawers\Coordinates.cs" />
+    <Compile Include="Drawers\Direction.cs" />
+    <Compile Include="Drawers\DrawerBase.cs" />
+    <Compile Include="Drawers\DrawerState.cs" />
+    <Compile Include="Drawers\IDrawerState.cs" />
+    <Compile Include="Drawers\PenState.cs" />
+    <Compile Include="Sources\CommandEventArgs.cs" />
+    <Compile Include="Sources\CommandHandler.cs" />
+    <Compile Include="Commands\CommandParser.cs" />
+    <Compile Include="Commands\CommandParserException.cs" />
+    <Compile Include="Sources\ConsoleCommandReader.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Commands\ICommandParser.cs" />
+    <Compile Include="Sources\ICommandsSource.cs" />
+    <Compile Include="Drawers\IDrawer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Commands\Commands.cd" />
+    <None Include="Drawers\Drawers.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

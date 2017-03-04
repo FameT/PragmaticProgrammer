@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MiniLangLib.Drawers;
+using MiniLangLib.Sources;
 
 namespace MiniLang
 {
@@ -10,6 +7,13 @@ namespace MiniLang
     {
         static void Main(string[] args)
         {
+            var commandReader = new ConsoleCommandsReader();
+            var drawer = new ConsoleDrawer();
+
+            using (new CommandHandler(commandReader, drawer))
+            {
+                commandReader.Start();
+            }
         }
     }
 }
