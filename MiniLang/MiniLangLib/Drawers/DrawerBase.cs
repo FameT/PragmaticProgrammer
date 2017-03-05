@@ -8,13 +8,18 @@ namespace MiniLangLib.Drawers
 
         private readonly DrawerState _state = new DrawerState();
 
-        private DrawerState State { get { return _state; } }
+        protected DrawerState State { get { return _state; } }
 
         IDrawerState IDrawer.State { get { return State; } }
 
         public virtual void MoveTo(Direction direction, int distance)
         {
-            ChangeCurrentCoordinates(direction, distance);
+            var to = CalculateNewCoordinates(direction, distance);
+            if (State.PenState == PenState.Down)
+            {
+                DrawLine(State.CurrentCoordinates, to);
+            }
+            State.CurrentCoordinates = to;
         }
 
         public virtual void PenDown()
@@ -41,7 +46,12 @@ namespace MiniLangLib.Drawers
             State.PenState = penState;
         }
 
-        protected virtual void ChangeCurrentCoordinates(Direction direction, int distance)
+        protected virtual void DrawLine(Coordinates from, Coordinates to)
+        {
+            return;
+        }
+
+        protected virtual Coordinates CalculateNewCoordinates(Direction direction, int distance)
         {
             int x;
             int y;
@@ -71,7 +81,7 @@ namespace MiniLangLib.Drawers
             x = State.CurrentCoordinates.X + x * distance;
             y = State.CurrentCoordinates.Y + y * distance;
 
-            State.CurrentCoordinates = new Coordinates(x, y);
+            return new Coordinates(x, y);
         }
 
         #endregion

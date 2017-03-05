@@ -7,9 +7,9 @@ namespace MiniLangLib.Sources
         public void Start()
         {
             Console.WriteLine("Welcome to MiniLang Console.");
+            Console.WriteLine("Please, enter command and hit <Enter> or press <Ctrl>+<C> to exit.");
             while (true)
             {
-                Console.WriteLine("Please, enter command and hit <Enter> or press <Ctrl>+<C> to exit.");
                 var command = Console.ReadLine();
                 var e = new CommandEventArgs(command);
                 OnCommandReceived(e);

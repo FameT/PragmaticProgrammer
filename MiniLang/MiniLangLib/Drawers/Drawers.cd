@@ -4,9 +4,9 @@
     <Position X="4.833" Y="0.5" Height="0.302" Width="0.7" />
   </Comment>
   <Class Name="MiniLangLib.Drawers.ConsoleDrawer" BaseTypeListCollapsed="true">
-    <Position X="6" Y="6.5" Width="2.25" />
+    <Position X="4.75" Y="6.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Drawers\ConsoleDrawer.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -25,6 +25,13 @@
       <FileName>Drawers\DrawerBase.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MiniLangLib.Drawers.WinFormsDrawer">
+    <Position X="7.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Drawers\WinFormsDrawer.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Struct Name="MiniLangLib.Drawers.Coordinates">
     <Position X="0.5" Y="1.75" Width="1.5" />

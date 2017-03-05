@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniLang", "MiniLang\MiniLa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniLangLib", "MiniLangLib\MiniLangLib.csproj", "{2B1ECEB7-F208-48AD-9C09-F780300DF671}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniLangWin", "MiniLangWin\MiniLangWin.csproj", "{2664B214-AC3B-4F79-AD4A-067B624D1073}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2B1ECEB7-F208-48AD-9C09-F780300DF671}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B1ECEB7-F208-48AD-9C09-F780300DF671}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B1ECEB7-F208-48AD-9C09-F780300DF671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2664B214-AC3B-4F79-AD4A-067B624D1073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2664B214-AC3B-4F79-AD4A-067B624D1073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2664B214-AC3B-4F79-AD4A-067B624D1073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2664B214-AC3B-4F79-AD4A-067B624D1073}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

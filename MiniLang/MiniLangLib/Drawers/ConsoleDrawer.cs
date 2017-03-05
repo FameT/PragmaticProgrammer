@@ -4,10 +4,10 @@ namespace MiniLangLib.Drawers
 {
     public class ConsoleDrawer : DrawerBase
     {
-        public override void MoveTo(Direction direction, int distance)
+        protected override void DrawLine(Coordinates from, Coordinates to)
         {
-            Console.WriteLine($"{distance} to the {direction}.");   // TODO: sth better
-            base.MoveTo(direction, distance);
+            base.DrawLine(from, to);
+            Console.WriteLine($"{from}--------------{to}.");   // TODO: sth better
         }
     }
 }
